@@ -80,7 +80,9 @@ body {
   padding-bottom: 24px;*/
   border-bottom: 1px solid var(--grey-light-cornflower);
   background: var(--light-white);
-  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -190,9 +192,9 @@ body {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/hero/people-office.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;  
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   max-width: 1440px;
   padding-top: 188px;
   padding-bottom: 188px;
@@ -254,9 +256,9 @@ body {
   flex-basis: calc((100% - 72px) / 4);
 }
 .advantage-image-container {
- display: flex;
- justify-content: center;
- align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: var(--dark-white-cloud);
   padding: 24px 100px;
   margin-bottom: 8px;
@@ -402,14 +404,15 @@ body {
   border-width: 1px;
   border-style: solid;
   color: var(--light-grey-slate);
- /*border-color: var(--light-grey-slate);*/
-  transition: border-color var(--transition-timing), color var(--transition-timing);
+  /*border-color: var(--light-grey-slate);*/
+  transition: border-color var(--transition-timing),
+    color var(--transition-timing);
 }
 
 .customers-item-link:hover,
 .customers-item-link:focus {
   /*border-color: var(--blue-pressed-ocean);*/
-  color: var(--blue-pressed-ocean)
+  color: var(--blue-pressed-ocean);
 }
 
 .customer-item-image {
@@ -442,11 +445,11 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
-  }
+}
 
-  .footer-text-container{
-    margin-right: 120px;
-  }
+.footer-text-container {
+  margin-right: 120px;
+}
 
 .page-footer .logo-text {
   display: inline-block;
@@ -500,9 +503,69 @@ body {
 }
 
 .footer-social-image {
- /*width: 24px;
+  /*width: 24px;
   height: 24px;*/
   fill: var(--dark-white-cloud);
+}
+
+.footer-form {
+  margin-left: 80px;
+}
+
+.footer-email-form {
+  display: flex;
+}
+
+.email-footer-input {
+  width: 264px;
+  height: 40px;
+  margin-right: 24px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--light-white);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background-color: var(--black-navy);
+}
+
+.email-footer-input::placeholder {
+  font-size: 12px;
+  line-height: 2; /* 200% */
+  letter-spacing: 0.04px;
+  color: var(--light-white);
+}
+
+.footer-subscribe-email {
+  color: var(--light-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
+.footer-button {
+  width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  border: none;
+  background-color: var(--blue-main-iris);
+  color: var(--light-white);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  transition: background-color var(--transition-timing);
+}
+
+.footer-button-image {
+  margin-left: 16px;
+  fill: var(--light-white);
+}
+
+.footer-button:hover{
+  background-color: var(--blue-pressed-ocean);
 }
 
 /*Portfolio*/
@@ -554,7 +617,7 @@ body {
   row-gap: 48px;
 }
 
-.work-exhample-link{
+.work-exhample-link {
   display: block;
   transition: box-shadow var(--transition-timing);
 }
@@ -667,6 +730,7 @@ body {
   transform: translate(-50%, -50%) scale(1);
   width: 408px;
   min-height: 584px;
+  padding: 72px 24px 24px 24px;
   background-color: #fcfcfc;
   border-radius: 4px;
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
@@ -707,5 +771,123 @@ body {
 
 .close-modal-button:hover .close-modal-image,
 .close-modal-button:focus .close-modal-image {
- fill: var(--light-white);
+  fill: var(--light-white);
+}
+
+.form-name {
+  margin-bottom: 16px;
+  text-align: center;
+  color: var(--black-navy);
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--light-grey-slate);
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal-input {
+  margin-bottom: 8px;
+  padding-left: 38px;
+  width: 100%;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid var(--black-navy);
+  font-size: 18px;
+  color: var(--black-navy);
+  transition: border-color var(--transition-timing);
+}
+
+.modal-input:focus {
+  border-color: var(--blue-main-iris);
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+.input-icon {
+  fill: var(--black-navy);
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  transition: fill var(--transition-timing);
+}
+
+.modal-input:focus + .input-icon {
+  fill: var(--blue-main-iris);
+}
+
+.input-image-container {
+  position: relative;
+}
+
+.input-comment {
+  width: 100%;
+  height: 120px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid var(--black-navy);
+  resize: none;
+  font-size: 18px;
+  color: var(--black-navy);
+  transition: border-color var(--transition-timing);
+}
+
+.input-comment::placeholder {
+  color: rgba(46, 47, 66, 0.4);
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.04em;
+}
+
+.input-comment:focus {
+  border-color: var(--blue-main-iris);
+  outline-color: transparent;
+  outline-offset: 4px;
+}
+
+.check-icon {
+  margin-right: 8px;
+  padding: 1.5px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  fill: none;
+  transition: fill var(--transition-timing),
+    border-color var(--transition-timing),
+    background-color var(--transition-timing);
+}
+
+.checkbox-link {
+  color: var(--blue-main-iris);
+}
+
+.modal-checkbox {
+  appearance: none;
+  position: absolute;
+}
+
+.modal-checkbox-label {
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+}
+
+.modal-checkbox:checked + .check-icon {
+  fill: var(--dark-white-cloud);
+  border-color: transparent;
+  background-color: var(--blue-pressed-ocean);
+}
+
+.modal-checkbox:focus + .check-icon {
+  border-color: var(--blue-pressed-ocean);
+  border-width: 2px;
 }
