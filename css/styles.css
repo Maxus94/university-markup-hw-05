@@ -882,7 +882,8 @@ body {
   fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  transition: background-color var(--transition-timing);
+  transition: fill var(--transition-timing), border var(--transition-timing),
+    background-color var(--transition-timing);
 }
 
 /*.check-icon {
